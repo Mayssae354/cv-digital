@@ -5,9 +5,9 @@ const sec2 = document.getElementById('sec2');
 const btn3 = document.getElementById('btn3');
 const sec3 = document.getElementById('sec3');
 const down = document.getElementById('down');
-const choices = document.getElementById('barre'); // C'est ton <nav id="barre" class="choices">
+const choices = document.getElementById('barre'); 
 
-let activeSection = null; // Pour savoir si un bouton est déjà actif
+let activeSection = null; 
 
 function reset() {
     btn1.style.background = "linear-gradient(25deg, #dbdada, #ffffff)";
@@ -24,6 +24,8 @@ function reset() {
     activeSection = null;
 }
 
+
+
 btn1.addEventListener('click', () => {
     if (activeSection === 'sec1') {
         reset();
@@ -39,6 +41,7 @@ btn1.addEventListener('click', () => {
         btn1.style.color = "#693419"
         btn2.style.display = "none";
         btn3.style.display = "none";
+        sec1.classList.add("show");
         sec1.style.display = "block";
         down.style.display = "none";
         activeSection = 'sec1';
@@ -62,7 +65,9 @@ btn2.addEventListener('click', () => {
         btn1.style.display = "none";
         btn3.style.display = "none";
         down.style.display = "none";
+        sec2.classList.add("show");
         sec2.style.display = "block";
+       
         activeSection = 'sec2';
         choices.classList.remove('large');
         choices.classList.add('small');
@@ -85,7 +90,9 @@ btn3.addEventListener('click', () => {
         btn1.style.display = "none";
         btn2.style.display = "none";
         down.style.display = "none";
+        sec3.classList.add("show");
         sec3.style.display = "block";
+
         activeSection = 'sec3';
         choices.classList.remove('large');
         choices.classList.add('small');
