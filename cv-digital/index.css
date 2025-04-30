@@ -1,23 +1,5 @@
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
-    --dark-color: #2c3e50;
-    --text-color: #333;
-    --border-radius: 5px;
-    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
-}
-.skill-bar {
-    height: 8px;
-    background-color: var(--light-color);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-}
-.skill-level {
-    height: 100%;
-    background-color: var(--secondary-color);
+.academique {
+    animation: rotateOnce 0.8s ease;
 }
 
 @keyframes rotateOnce {
@@ -72,7 +54,7 @@ section {
     z-index: 2;
     filter: blur(120px);
     opacity: 0.25;
-  } 
+  }
   
   @keyframes rotateBG {
     from {
@@ -239,23 +221,17 @@ header{
 }
 .may{
     font-size: xxx-large;
-    font-family: auto;
     color: #3d3d3d;
 }
 .donner_cv p {
     font-size: larger;
 
 }
-.icons{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 1rem;
-}
+
 
 .info
 {
     font-weight: 200;
-    font-family: fangsong;
     color: #5a5a5a;
 }
 .line{
@@ -271,7 +247,6 @@ header{
 }
 .profile_pic h2{
     font-size: xx-large;
-    font-family: emoji;
     margin: 14px;
    
 }
@@ -285,7 +260,9 @@ header{
 }
 
 
-
+.academique{
+    animation: rotateOnce 0.8s ease;
+}
 .section1,.section2,.section3{
     display: none;
     
@@ -348,52 +325,7 @@ header{
   
 
 }
-.greyy{
-    width: 10%;
-    height: 5.6px;
-    background-color: #ddd;
-    border-radius: 3px;
-}
-.html{
-    width: 8.92%;
-    height: 5.6px;
-    background-color: #3d3d3d;
-    border-radius: 3px;
-    position: absolute;
-    z-index: 2;
-}
-.js{
-    width: 4.92%;
-    height: 5.6px;
-    background-color: #3d3d3d;
-    border-radius: 3px;
-    position: absolute;
-    z-index: 2;
-}
-.matlab{
-    width: 5.92%;
-    height: 5.6px;
-    background-color: #3d3d3d;
-    border-radius: 3px;
-    position: absolute;
-    z-index: 2;
-}
-.python{
-    width: 7.92%;
-    height: 5.6px;
-    background-color: #3d3d3d;
-    border-radius: 3px;
-    position: absolute;
-    z-index: 2;
-}
-.mysql{
-    width: 8.92%;
-    height: 5.6px;
-    background-color: #3d3d3d;
-    border-radius: 3px;
-    position: absolute;
-    z-index: 2;
-}
+
 .arab{
     width: 5.92%;
     height: 5.6px;
@@ -474,7 +406,6 @@ main h1{
 .comp{
     margin-top: 1rem;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
 }
@@ -558,7 +489,7 @@ main h1{
         width: 100%;
     }
     .profile{
-      
+        width: 100%;
         align-items: center;
     }
     .profile img{
@@ -577,7 +508,7 @@ main h1{
     }
     .choices button{
         width: 44%;
-        font-size: 13px;
+        font-size: 15px;
     }
     .profile h1{
         padding: 8px;
@@ -589,9 +520,6 @@ main h1{
         font-size: x-large;
         padding: 9px;
     }
-    .down h1{
-        font-size: large;
-    }
     .arab{
         width: 22.92%;
     }
@@ -600,9 +528,6 @@ main h1{
     }
     .francais{
         width: 15.3%;
-    }
-    .pour{
-        gap: 1rem;
     }
     .footer2 {
         display: flex;
@@ -626,11 +551,9 @@ main h1{
         padding: 1rem 1rem 1rem 1rem;
     }
     .down{
-        padding: 6px 1rem;
+        padding: 6px 2rem;
     }
-    .down h1{
-        font-size: large;
-    }
+    
     .donnee_cv{
         width: 72%;
     }
@@ -648,50 +571,5 @@ main h1{
     .profile{
         padding: 0;
     }
-    .profile_pic{
-        width: 30%;
-    }
-    .arab{
-        width: 7.3%;
-    }
-    .Anglais{
-        width: 6%;
-    }
-    .francais{
-        width: 5.3%;
-    }
-    .icons{
-        font-size: 20px;
-    }
-    .footer2{
-        gap: 2rem;
-    }
-    .choices.large{
-        padding: 0rem;
-    }
-    .greyy{
-        width: 15%;
-    }
-    .html{
-        width: 12.92%;
-    }
-    .matlab{
-        width: 7.92%;
-    }
-    .python{
-        width: 9.92%;
-    }
-    .secmain{
-        margin-top: 1rem;
-    }
-    .mysql{
-        width: 10.92%;
-    }
-}
 
-@media screen and (max-width:300px)
-{
-    .choices button{
-        font-size: 10px;
-    }
 }
