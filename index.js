@@ -10,6 +10,7 @@ const choices = document.getElementById('barre');
 let activeSection = null; 
 
 function reset() {
+    
     btn1.style.background = "linear-gradient(25deg, #dbdada, #ffffff)";
     btn2.style.background = "linear-gradient(25deg, #dbdada, #ffffff)";
     btn3.style.background = "linear-gradient(25deg, #dbdada, #ffffff)";

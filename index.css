@@ -1,39 +1,14 @@
-:root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
-    --dark-color: #2c3e50;
-    --text-color: #333;
-    --border-radius: 5px;
-    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
-}
-.skill-bar {
-    height: 8px;
-    background-color: var(--light-color);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-}
-.skill-level {
-    height: 100%;
-    background-color: var(--secondary-color);
+body {
+    background-color: #f5f5f5; 
+    color: #4a4a4a; 
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
 }
 
-@keyframes rotateOnce {
-    0% {
-        transform: rotateY(0deg);
-    }
-    50% {
-        transform: rotateY(180deg);
-    }
-    100% {
-        transform: rotateY(360deg);
-    }
+.icons a:hover{
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(88, 81, 88, 0.5);
 }
-
-
-
 
 section {
     position: relative;
@@ -67,25 +42,12 @@ section {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: conic-gradient(from 0deg, #ffffff, #8181a2, #1c1c27, #6d88a4);
-   
+    background: linear-gradient(160deg, #474935, #ffffff);
     z-index: 2;
     filter: blur(120px);
     opacity: 0.25;
   } 
-  
-  @keyframes rotateBG {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
 
-
-
-  
 
   #sec1 {
     box-shadow: 0 10px 25px rgba(122, 97, 84, 0.5);
@@ -105,16 +67,6 @@ section {
   }
 
 
-
-
-
-
-body {
-    background-color: #f5f5f5; 
-    color: #4a4a4a; 
-    font-family: 'Poppins', sans-serif;
-    margin: auto;
-}
 .choices.large {
     display: flex;
     justify-content: space-evenly;
@@ -137,6 +89,7 @@ header{
     text-align: center;
     gap: 3rem;
     background-color: #efefef;
+    
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .profile {
@@ -147,6 +100,8 @@ header{
     width: -webkit-fill-available;
     border-radius: 50%;
     padding: 2rem;
+   
+    margin-top: -1rem;
 }
 .donnee_cv{
     width: 70%;
@@ -183,8 +138,9 @@ header{
 
 .profile img {
     animation: profileBounce 1s ease;
+    
   }
-  
+ 
   @keyframes profileBounce {
     0% {
       transform: scale(0.8);
@@ -223,9 +179,6 @@ header{
     animation: slideInLeft 1s ease;
     
 }
-
-
-
 
 .profile_pic p{
     font-size: large;
@@ -308,10 +261,11 @@ header{
    
     border-radius: 19px;
     cursor: pointer;
+    transition: 0.3s;
     font-size: 17px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 78px;
-    transition: 0.3s;
+    
  
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
@@ -324,9 +278,25 @@ header{
     
 }
 
+.profile img{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.profile img:hover{
+    background: linear-gradient(160deg, #c0c1b6, #ffffff);
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(88, 81, 88, 0.5);
+    
+}
 
-
-
+.i{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.i{
+    
+    transform: scale(1.08);
+}
 .pour{
     display: flex;
     justify-content: center;
